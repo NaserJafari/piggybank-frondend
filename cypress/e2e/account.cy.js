@@ -6,7 +6,7 @@ describe('Testscenario: Je accountnaam aanpassen', () => {
 
     it('passes', () => {
         cy.visit("http://localhost:3000/settings")
-        cy.get(".accountName-input").clear().type("Nieuwe naam")
+        cy.get(".accountName-input").clear().type("Jan")
         cy.get('button[type="submit"]').click()
         cy.get(".alert").should("be.visible")
     })
